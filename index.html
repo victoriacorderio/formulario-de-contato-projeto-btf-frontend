@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!--define a versão do HTML5-->
+<html lang="pt-br"> <!--define o idioma principal da página-->
+<head>
+    <meta charset="UTF-8"> <!--configura a codificação para suportar acentos e caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--torna a página responsiva em dispositivos móveis-->
+    <title>Formulário de Contato</title> <!--título exibido na aba do navegador-->
+</head>
+<body> <!--início do corpo do site-->
+    <h1>Fale Conosco!</h1> <!--título/chamada-->
+    <p>Preencha os campos abaixo para entrar em contato. Responderemos assim que possível!</p> <!--texto de orientação-->
+
+    <form action="#" method="post"> <!--cria o formulário e define destino (# = nenhum) e método de envio-->
+        <label for="nome">Nome:</label><br> <!--texto identificador do campo conectado ao input "nome"-->
+        <input type="text" id="nome" name="nome" required><br><br> <!--campo de texto simples obrigatório-->
+
+        <label for="email">E-mail:</label><br> <!--texto identificador do campo conectado ao input "email"-->
+        <input type="email" id="email" name="email" required><br><br> <!--campo para e-mail com validação automática-->
+
+        <label for="mensagem">Mensagem:</label><br> <!--texto identificador do campo conectado ao textarea "mensagem"-->
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br> <!--área de texto multi-linhas obrigatória-->
+
+        <input type="submit" value="Enviar"> <!--botão que envia os dados do formulário-->
+    </form> <!--final do formulário-->
+
+</body> <!--final do corpo do site-->
+</html> <!--fim do documento HTML-->
